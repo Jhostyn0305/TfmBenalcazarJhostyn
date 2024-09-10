@@ -25,7 +25,7 @@ jobs:
         ./build.sh
         
     - name: Upload EAR artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3  # Actualizar a la versión v3
       with:
         name: TFMApp.ear
         path: TFMApp.ear
