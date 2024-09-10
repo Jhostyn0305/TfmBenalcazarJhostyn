@@ -3,10 +3,11 @@
 # Directorios de salida para compilados
 OUT_DIR="output"
 EAR_DIR="EarContent"
+META_INF_DIR="$EAR_DIR/META-INF"
 
 # Limpiar directorios de compilación anteriores
 rm -rf $OUT_DIR $EAR_DIR
-mkdir -p $OUT_DIR $EAR_DIR
+mkdir -p $OUT_DIR/ejb $OUT_DIR/web $META_INF_DIR
 
 # Compilar archivos Java del módulo EJB
 echo "Compilando módulo EJB..."
@@ -27,6 +28,12 @@ cp -r TFMWeb/WebContent/* $OUT_DIR/web/
 # Crear el archivo WAR del módulo Web
 echo "Empaquetando módulo Web en WAR..."
 jar -cvf $EAR_DIR/TFMWeb.war -C $OUT_DIR/web .
+
+# Copiar el descriptor de despliegue si existe
+if [ -f TFM/META-INF/application.xml ]; then
+    echo "Copiando descriptor de despliegue..."
+    cp TFM/META-INF/application.xml $META_INF_DIR/
+fi
 
 # Empaquetar los módulos EJB y Web en el archivo EAR
 echo "Creando archivo EAR..."
