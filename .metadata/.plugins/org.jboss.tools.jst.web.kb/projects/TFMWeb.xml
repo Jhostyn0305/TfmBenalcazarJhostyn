@@ -195,8 +195,8 @@
    <linked-resource declaration="true" name="%1;" path="%0"/>
   </core>
   <el>
-   <linked-el length="33" name="%1" offset="3341" path="%2"/>
-   <linked-el length="33" name="%0" offset="3341" path="%2"/>
+   <linked-el length="33" name="%1" offset="3345" path="%2"/>
+   <linked-el length="33" name="%0" offset="3345" path="%2"/>
   </el>
  </validation>
  <aliases>
