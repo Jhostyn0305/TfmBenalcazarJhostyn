@@ -52,8 +52,6 @@
 	color: #fff;
 }
 
-
-
 .stat-card {
 	display: flex;
 	align-items: center;
@@ -102,7 +100,7 @@
 }
 </style>
 </h:head>
-<h:body>
+<h:body onload="#{beanStore.construct()}">
 	<div class="menu-container">
 		<!-- Sección de Opciones del Menú -->
 		<div class="menu-section">
@@ -138,7 +136,7 @@
 					<p class="stat-card-title">Productos</p>
 
 					<p:outputLabel styleClass="stat-card-value"
-						value="#{beanStore.lstProduct.size()}" />
+						value="#{beanStore.lstCategories.size()}" />
 				</div>
 			</p:card>
 
