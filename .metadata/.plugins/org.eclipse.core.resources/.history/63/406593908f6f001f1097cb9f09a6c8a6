@@ -295,7 +295,6 @@ public class ManagerDAO {
 	 * @return El valor maximo.
 	 * @throws Exception
 	 */
-
 	@SuppressWarnings("rawtypes")
 	public long obtenerValorMaxWhere(Class clase, String nombrePropiedad, String pClausulaWhere) throws Exception {
 		Query q;

@@ -72,7 +72,6 @@ INDEX VERSION 1.134+C:\Users\jbenalcazar\Documents\Maestría\TFM\workspace\.metad
 3693117940.index
 948755105.index
 1256603052.index
-3034510157.index
 4093079314.index
 1325876906.index
 1692888955.index
