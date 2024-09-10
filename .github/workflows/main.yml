@@ -23,3 +23,9 @@ jobs:
       run: |
         chmod +x build.sh
         ./build.sh
+        
+    - name: Upload EAR artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: TFMApp.ear
+        path: TFMApp.ear
