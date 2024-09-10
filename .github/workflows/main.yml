@@ -3,7 +3,7 @@ name: Deploy to WildFly on AWS EC2
 on:
   push:
     branches:
-      - main  
+      - main  # Reemplaza con la rama que desees monitorizar
 
 jobs:
   build:
@@ -16,7 +16,8 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        java-version: '11'  
+        java-version: '11'  # Reemplaza con la versión de Java que uses
+        distribution: 'temurin'  # Añadir la distribución de Java
 
     - name: Build EAR file
       run: |
