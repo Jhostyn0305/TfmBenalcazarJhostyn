@@ -1,0 +1,5 @@
+package tfm.model.client.managers;
+
+public class ManagerClient {
+
+}

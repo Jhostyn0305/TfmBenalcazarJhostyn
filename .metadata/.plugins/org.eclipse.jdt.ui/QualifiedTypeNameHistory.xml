@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
+    <fullyQualifiedTypeName name="javax.ejb.LocalBean"/>
+    <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="tfm.model.core.managers.ManagerDAO"/>
+    <fullyQualifiedTypeName name="javax.ejb.EJB"/>
+    <fullyQualifiedTypeName name="javax.enterprise.context.SessionScoped"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="tfm.model.core.entities.Product"/>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+    <fullyQualifiedTypeName name="java.util.Locale.Category"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.client.Client"/>
+    <fullyQualifiedTypeName name="tfm.model.client.managers.ManagerClient"/>
+    <fullyQualifiedTypeName name="tfm.model.core.entities.Client"/>
+    <fullyQualifiedTypeName name="javax.inject.Named"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,10 @@
+package tfm.model.client.managers;
+
+public class ManagerClient {
+	@PersistenceContext
+	private EntityManager em;
+	@EJB
+	private ManagerDAO mDAO;
+	@EJB
+	private ManagerAuditoria mAuditoria;
+}

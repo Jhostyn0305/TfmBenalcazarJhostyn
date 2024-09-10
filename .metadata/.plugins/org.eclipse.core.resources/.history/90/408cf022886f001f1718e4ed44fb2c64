@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Menú Principal - TFM Benalcázar Jhostyn</title>
+	<style>
+.menu-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	align-items: start;
+	height: 100vh;
+	background-color: #f4f4f9;
+	padding: 40px;
+}
+
+.menu-section, .stats-section {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.menu-card {
+	width: 100%;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.menu-button {
+	width: 100%;
+	margin-bottom: 15px;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 15px 20px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menu-button-icon {
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.stat-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.stat-card-icon {
+	font-size: 2em;
+	color: #007bff;
+}
+
+.stat-card-content {
+	text-align: right;
+}
+
+.stat-card-title {
+	font-size: 1.1em;
+	color: #777;
+	margin: 0;
+}
+
+.stat-card-value {
+	font-size: 1.5em;
+	margin: 0;
+	font-weight: bold;
+	color: #333;
+}
+
+.header {
+	grid-column: 1/-1;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.footer {
+	grid-column: 1/-1;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 0.9em;
+	color: #777;
+}
+</style>
+</h:head>
+<h:body>
+	<div class="menu-container">
+		<!-- Sección de Opciones del Menú -->
+		<div class="menu-section">
+			<div class="header">
+				<h1>Bienvenido a la Aplicación TFM</h1>
+				<p>Selecciona una opción para comenzar</p>
+			</div>
+			<h:form>
+				<p:button value="Categorías de productos" icon="pi pi-tags"
+					styleClass="menu-button p-button-raised p-button-rounded p-button-info">
+					<span class="menu-button-icon pi pi-tags"></span>
+				</p:button>
+				<p:button value="Productos" icon="pi pi-box"
+					styleClass="menu-button p-button-raised p-button-rounded p-button-success">
+					<span class="menu-button-icon pi pi-box"></span>
+				</p:button>
+				<p:button value="Clientes" icon="pi pi-users"
+					styleClass="menu-button p-button-raised p-button-rounded p-button-warning">
+					<span class="menu-button-icon pi pi-users"></span>
+				</p:button>
+				<p:button value="Ventas" icon="pi pi-shopping-cart"
+					styleClass="menu-button p-button-raised p-button-rounded p-button-danger">
+					<span class="menu-button-icon pi pi-shopping-cart"></span>
+				</p:button>
+			</h:form>
+		</div>
+
+		<!-- Sección de Estadísticas Rápidas -->
+		<div class="stats-section">
+			<p:card styleClass="stat-card">
+				<i class="pi pi-tags stat-card-icon"></i>
+				<div class="stat-card-content">
+					<p class="stat-card-title">Productos</p>
+					<p class="stat-card-value">be</p>
+					<p:outputLabel value="#{BeanStore.lstClients.size()}" />
+				</div>
+			</p:card>
+
+			<p:card styleClass="stat-card">
+				<i class="pi pi-users stat-card-icon"></i>
+				<div class="stat-card-content">
+					<p class="stat-card-title">Clientes</p>
+					<p class="stat-card-value">45</p>
+				</div>
+			</p:card>
+
+			<p:card styleClass="stat-card">
+				<i class="pi pi-shopping-cart stat-card-icon"></i>
+				<div class="stat-card-content">
+					<p class="stat-card-title">Ventas Recientes</p>
+					<p class="stat-card-value">10</p>
+				</div>
+			</p:card>
+		</div>
+		<!-- Información del trabajo -->
+		<div class="footer">
+			<p>Trabajo realizado por Ing. Jhostyn Benalcázar</p>
+		</div>
+	</div>
+</h:body>
+</html>

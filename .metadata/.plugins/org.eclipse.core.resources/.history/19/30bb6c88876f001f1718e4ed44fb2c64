@@ -1,0 +1,23 @@
+package tfm.core.view.controller.modules.vent;
+
+import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
+import javax.enterprise.context.SessionScoped;
+
+import tfm.model.product.manager.ManagerProduct;
+
+@SessionScoped
+public class BeanProduct {
+
+	@EJB
+	private ManagerProduct mProduct;
+
+	
+	
+	
+	private List<>
+	@PostConstruct
+	public BeanProduct() {
+	}
+
+}

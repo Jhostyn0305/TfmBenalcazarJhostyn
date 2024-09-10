@@ -1,0 +1,34 @@
+package tfm.core.view.controller.modules.vent;
+
+import java.util.List;
+import java.util.Locale.Category;
+
+import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
+import javax.enterprise.context.SessionScoped;
+
+import tfm.model.client.managers.ManagerClient;
+import tfm.model.core.entities.Client;
+import tfm.model.core.entities.Product;
+import tfm.model.product.manager.ManagerProduct;
+
+@SessionScoped
+public class BeanStore {
+
+	@EJB
+	private ManagerClient mClient;
+	@EJB
+	private ManagerProduct mProduct;
+
+	private List<Client> lstClients;
+	private List<Product> lstProduct;
+	private List<Category> lstCategories;
+
+	@PostConstruct
+	public void BeanStore() {
+		lstProduct = mProduct.findAllProducts();
+		lstCategories = mProduct.findAllCategories();
+		lstClients=m
+	}
+
+}

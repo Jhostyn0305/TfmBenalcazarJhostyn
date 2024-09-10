@@ -1,0 +1,15 @@
+package tfm.model.client.managers;
+
+/**
+ * Session Bean implementation class ManagerCliente
+ */
+@Stateless
+@LocalBean
+public class ManagerClient {
+	@PersistenceContext
+	private EntityManager em;
+	@EJB
+	private ManagerDAO mDAO;
+	@EJB
+	private ManagerAuditoria mAuditoria;
+}

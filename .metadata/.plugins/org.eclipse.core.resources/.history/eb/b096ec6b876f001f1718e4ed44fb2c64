@@ -1,0 +1,16 @@
+package tfm.core.view.controller.modules.product;
+
+import javax.ejb.EJB;
+import javax.enterprise.context.SessionScoped;
+
+@SessionScoped
+public class BeanProduct {
+
+	@EJB
+	private ManagerProduct mProduct;
+
+	public BeanProduct() {
+
+	}
+
+}

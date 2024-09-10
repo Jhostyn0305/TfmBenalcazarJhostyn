@@ -1,0 +1,12 @@
+package tfm.core.view.controller.modules.product;
+
+import javax.enterprise.context.SessionScoped;
+
+@SessionScoped
+public class BeanProduct {
+
+	public BeanProduct() {
+
+	}
+
+}

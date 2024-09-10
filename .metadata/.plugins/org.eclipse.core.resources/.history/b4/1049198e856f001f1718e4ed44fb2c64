@@ -1,0 +1,29 @@
+package tfm.model.product.manager;
+
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import tfm.model.core.entities.Product;
+import tfm.model.core.managers.ManagerDAO;
+
+public class ManagerProduct {
+
+	@PersistenceContext
+	private EntityManager em;
+	@EJB
+	private ManagerDAO mDAO;
+
+	@SuppressWarnings("unchecked")
+	public List<Product> findAllProducts() {
+		return mDAO.findAll(Product.class);
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<Category> findAllCategories() {
+		return mDAO.findAll(Category.class);
+	}
+
+}

@@ -1,0 +1,5 @@
+package tfm.model.core.managers;
+
+public class ManagerDAO {
+
+}

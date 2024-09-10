@@ -1,0 +1,12 @@
+package product;
+
+import javax.enterprise.context.SessionScoped;
+
+@SessionScoped
+public class BeanProduct {
+
+	public BeanProduct() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
